@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-content {
+  @apply flex flex-col h-screen justify-center items-center;
+}
+
+.city-input {
+  @apply rounded-l-lg p-4 border-t mr-0 border-b border-l text-gray-800 border-gray-200 bg-white;
+}
+
+.city-button {
+  @apply px-8 rounded-r-lg bg-green-500  text-white font-bold p-4 uppercase border-green-500 border-t border-b border-r hover:bg-green-400;
+}

@@ -12,14 +12,17 @@ import getCity from './modules/getCity.js';
       getCity(data);
     },
     cacheDom: function() {
-      //search for elements in the DOM for DOM manipulation;
+      
     },
     bindEvents: function() {
       // for events on click or something passing the functions. 
     },
-    render: function() {
+    renderData: function() {
       //render page
     },
+    renderNewPage: function() {
+
+    }
 
 
 
