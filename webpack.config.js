@@ -15,17 +15,16 @@ module.exports = {
         use: [
           'style-loader',
           {
-            loader: 'css-loader', options: { importLoaders: 1 }
+            loader: 'css-loader', options: { importLoaders: 1 },
           },
-          'postcss-loader'
-        ]
-      }
-    ]
+          'postcss-loader',
+        ],
+      },
+    ],
   },
   devServer: {
     watchContentBase: true,
     ContentBase: path.resolve(__dirname, 'dist'),
-    open: true
-  }
+    open: true,
+  },
 };
-

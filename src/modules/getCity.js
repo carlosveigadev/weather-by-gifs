@@ -1,16 +1,18 @@
-async function getCity(data) {
+async function getCity(cityInput) {
+  let response;
+  let data;
   try {
-    const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=4c8393fda0294090a4f195011200912&q=${data}`,
+    response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=4c8393fda0294090a4f195011200912&q=${cityInput}`,
       {
-        mode: 'cors'
-      }
-    );
+        mode: 'cors',
+      });
     const city = await response.json();
-    return city.forecast.forecastday[0].day
-        
+    data = city.forecast.forecastday[0].day;
+    return data;
   } catch (error) {
-    console.log(error)
+    console.log(error);
   }
+  return data;
 }
 
 export default getCity;

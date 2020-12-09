@@ -1,32 +1,31 @@
-import "./assets/styles.css";
-import getCity from './modules/getCity.js';
+import './assets/styles.css';
+import getCity from './modules/getCity';
 
 
-(function() {
-  var weatherApp = {
-    init: function() {
+(function () {
+  const weatherApp = {
+    init() {
       this.cacheDom();
       this.bindEvents();
-      this.render();
-      let data = 'london'
+      this.renderData();
+      const data = 'london';
       getCity(data);
     },
-    cacheDom: function() {
-      
+    cacheDom() {
+
     },
-    bindEvents: function() {
-      // for events on click or something passing the functions. 
+    bindEvents() {
+      // for events on click or something passing the functions.
     },
-    renderData: function() {
-      //render page
+    renderData() {
+      // render page
     },
-    renderNewPage: function() {
+    renderNewPage() {
 
-    }
+    },
 
 
-
-  }
+  };
 
   weatherApp.init();
-})();
+}());
