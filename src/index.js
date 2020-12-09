@@ -1,4 +1,6 @@
 import "./assets/styles.css";
+import getCity from './modules/getCity.js';
+
 
 (function() {
   var weatherApp = {
@@ -6,6 +8,8 @@ import "./assets/styles.css";
       this.cacheDom();
       this.bindEvents();
       this.render();
+      let data = 'london'
+      getCity(data);
     },
     cacheDom: function() {
       //search for elements in the DOM for DOM manipulation;
