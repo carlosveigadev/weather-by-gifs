@@ -1,11 +1,12 @@
 import './assets/styles.css';
 import getCity from './modules/getCity';
 import getBoxes from './modules/getBoxes';
+import cityInput from './modules/cityInput';
 
 (function () {
   const weatherApp = {
+    button: document.getElementsByClassName('city-button')[0],
     init() {
-      this.cacheDom();
       this.bindEvents();
       this.renderData();
       const data = 'london';
@@ -13,11 +14,11 @@ import getBoxes from './modules/getBoxes';
       const defaultData = 'hmm'
       getBoxes(defaultData);
     },
-    cacheDom() {
-
-    },
     bindEvents() {
-      // for events on click or something passing the functions.
+      this.button.addEventListener("click", function () {
+        let cityInput = document.getElementsByClassName('city-input')[0].value;
+        getCity(cityInput).then(n => console.log(n));
+      })
     },
     renderData() {
       

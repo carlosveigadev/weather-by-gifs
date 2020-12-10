@@ -12,7 +12,6 @@ async function getCity(cityInput) {
   } catch (error) {
     console.log(error);
   }
-  return data;
 }
 
 export default getCity;
