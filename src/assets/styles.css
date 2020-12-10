@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.main-form {
+  @apply m-4 absolute;
+}
+
 .main-content {
   @apply flex flex-col h-screen justify-center items-center;
 }

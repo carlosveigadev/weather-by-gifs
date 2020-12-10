@@ -1,6 +1,6 @@
 import './assets/styles.css';
 import getCity from './modules/getCity';
-
+import getBoxes from './modules/getBoxes';
 
 (function () {
   const weatherApp = {
@@ -18,8 +18,10 @@ import getCity from './modules/getCity';
       // for events on click or something passing the functions.
     },
     renderData() {
-      // render page
+      const data = 'hmm'
+      getBoxes(data);
     },
+
     renderNewPage() {
 
     },
