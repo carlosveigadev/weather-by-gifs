@@ -10,6 +10,8 @@ import getBoxes from './modules/getBoxes';
       this.renderData();
       const data = 'london';
       getCity(data);
+      const defaultData = 'hmm'
+      getBoxes(defaultData);
     },
     cacheDom() {
 
@@ -18,8 +20,7 @@ import getBoxes from './modules/getBoxes';
       // for events on click or something passing the functions.
     },
     renderData() {
-      const data = 'hmm'
-      getBoxes(data);
+      
     },
 
     renderNewPage() {
