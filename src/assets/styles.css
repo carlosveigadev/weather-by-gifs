@@ -15,7 +15,7 @@ body {
 }
 
 .main-content {
-  @apply absolute;
+  @apply absolute bg-white bg-opacity-80 m-4 rounded-lg;
 
   top: 42%;
   left: 28%;
