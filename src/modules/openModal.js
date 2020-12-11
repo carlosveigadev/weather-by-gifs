@@ -51,6 +51,9 @@ function openModal(data) {
   uvIndex.className += checkUvIndex(data.uv);
   uvIndex.appendChild(document.createTextNode(`${data.uv}`));
   uList.appendChild(uvIndex);
+  document.querySelector('.close').addEventListener('click', function() {
+    myModal.remove()
+  });
 }
 
 export default openModal;

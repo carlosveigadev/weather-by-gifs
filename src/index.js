@@ -18,7 +18,7 @@ import openModal from './modules/openModal';
       this.button.addEventListener("click", function () {
         let cityInput = document.getElementsByClassName('city-input')[0].value;
         getCity(cityInput).then(object => openModal(object));
-      })
+      });
     },
     renderData() {
       
