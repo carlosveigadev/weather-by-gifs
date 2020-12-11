@@ -39,7 +39,7 @@ body {
 }
 
 .uList {
-  @apply p-20 text-3xl font-bold;
+  @apply text-3xl font-bold;
 }
 
 .uList li {

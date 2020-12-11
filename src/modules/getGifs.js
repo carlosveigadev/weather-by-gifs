@@ -7,10 +7,9 @@ async function getGifs(dataStatus) {
         mode: 'cors',
       });
     gif = await response.json();
-    return gif
-    // return data;
+    return gif;
   } catch (error) {
-    console.log(error);
+    window.open(error);
   }
   return gif.data;
 }

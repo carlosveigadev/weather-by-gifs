@@ -10,8 +10,9 @@ async function getCity(cityInput) {
     data = city.forecast.forecastday[0].day;
     return data;
   } catch (error) {
-    console.log(error);
+    window.open(error);
   }
+  return data;
 }
 
 export default getCity;
