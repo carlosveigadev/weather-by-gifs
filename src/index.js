@@ -16,7 +16,6 @@ import getGifs from './modules/getGifs';
       this.button.addEventListener("click", function () {
         let cityInput = document.getElementsByClassName('city-input')[0].value;
         getCity(cityInput).then(object => {
-          console.log(object.condition.text);
           getGifs(object.condition.text).then(object => setBackground(object.data))
           openModal(object);
         });

@@ -3,6 +3,7 @@ import getGifs from './getGifs';
 import setBackground from './setBackground';
 
 function openModal(data) {
+  // console.log(data)
   let myModal = document.createElement('div');
   myModal.setAttribute('id', 'myModal');
   myModal.className += 'modal';
@@ -19,6 +20,12 @@ function openModal(data) {
   let uList = document.createElement('ul')
   uList.className += 'uList'
   items.appendChild(uList);
+  let apiExplanation = document.createElement('li');
+  let apiIcon = document.createElement('img');
+  apiIcon.setAttribute('src', `${data.condition.icon}`);
+  apiExplanation.appendChild(apiIcon);
+  apiExplanation.appendChild(document.createTextNode(`${data.condition.text}`));
+  uList.appendChild(apiExplanation);
   let avgTemperature = document.createElement('li');
   avgTemperature.setAttribute('id', 'avgTemperature');
   let avgTemperatureIcon = document.createElement('i');

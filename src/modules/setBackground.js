@@ -7,7 +7,6 @@ function setBackground(data) {
   }
   let dataRandom = getRandomElements(data);
   dataRandom.forEach(element => {
-    console.log(element)
     let img = document.createElement('img');
     img.className += 'object-fill w-full h-52';
     img.setAttribute('src', `${element.images.downsized.url}`);
