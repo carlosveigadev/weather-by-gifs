@@ -1,4 +1,6 @@
 import checkUvIndex from './checkUvIndex';
+import getGifs from './getGifs';
+import setBackground from './setBackground';
 
 function openModal(data) {
   let myModal = document.createElement('div');
@@ -52,8 +54,11 @@ function openModal(data) {
   uvIndex.appendChild(document.createTextNode(`${data.uv}`));
   uList.appendChild(uvIndex);
   document.querySelector('.close').addEventListener('click', function() {
-    myModal.remove()
+    myModal.remove();
+    let defaultGif = 'hmm';
+    getGifs(defaultGif).then(object => setBackground(object.data));
   });
+
 }
 
 export default openModal;

@@ -19,7 +19,6 @@ import getGifs from './modules/getGifs';
           console.log(object.condition.text);
           getGifs(object.condition.text).then(object => setBackground(object.data))
           openModal(object);
-         
         });
       });
     }
