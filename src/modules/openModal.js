@@ -1,20 +1,53 @@
+import checkUvIndex from './checkUvIndex';
+
 function openModal(data) {
-  console.log(data.avgtemp_c)
   let myModal = document.createElement('div');
   myModal.setAttribute('id', 'myModal');
-  myModal.classList.add('modal');
+  myModal.className += 'modal';
   document.body.appendChild(myModal);
   let modalContent = document.createElement('div');
-  modalContent.classList.add('modal-content')
+  modalContent.className += 'modal-content';
   myModal.appendChild(modalContent);
   let closeButton = document.createElement('span');
-  closeButton.classList.add('close');
+  closeButton.className += 'close';
   closeButton.innerHTML = '&times;';
   modalContent.appendChild(closeButton);
-  let paragraph = document.createElement('p');
-  paragraph.innerText = data.avgtemp_c;
-  modalContent.appendChild(paragraph);
-
+  let items = document.createElement('div');
+  modalContent.appendChild(items);
+  let uList = document.createElement('ul')
+  uList.className += 'uList'
+  items.appendChild(uList);
+  let avgTemperature = document.createElement('li');
+  let avgTemperatureIcon = document.createElement('i')
+  avgTemperature.appendChild(avgTemperatureIcon);
+  avgTemperatureIcon.className += 'fas fa-thermometer-half';
+  avgTemperature.appendChild(document.createTextNode(`${data.avgtemp_c}`));
+  uList.appendChild(avgTemperature);
+  let maxTemperature = document.createElement('li'); 
+  let maxTemperatureIcon = document.createElement('i');
+  maxTemperature.appendChild(maxTemperatureIcon);
+  maxTemperatureIcon.className += 'fas fa-thermometer-full';
+  maxTemperature.appendChild(document.createTextNode(`${data.maxtemp_c}`));
+  uList.appendChild(maxTemperature);
+  let minTemperature = document.createElement('li');
+  let minTemperatureIcon = document.createElement('i');
+  minTemperature.appendChild(minTemperatureIcon);
+  minTemperatureIcon.className += 'fas fa-thermometer-empty';
+  minTemperature.appendChild(document.createTextNode(`${data.mintemp_c}`));
+  uList.appendChild(minTemperature);
+  let precipitation = document.createElement('li');
+  let precipitationIcon = document.createElement('i');
+  precipitation.appendChild(precipitationIcon);
+  precipitationIcon.className += 'fas fa-cloud-rain';
+  precipitation.appendChild(document.createTextNode(`${data.totalprecip_mm}mm`));
+  uList.appendChild(precipitation);
+  let uvIndex = document.createElement('li');
+  let uvIndexIcon = document.createElement('i');
+  uvIndex.appendChild(uvIndexIcon);
+  uvIndexIcon.className += 'fas fa-umbrella-beach';
+  uvIndex.className += checkUvIndex(data.uv);
+  uvIndex.appendChild(document.createTextNode(`${data.uv}`));
+  uList.appendChild(uvIndex);
 }
 
 export default openModal;
