@@ -16,9 +16,6 @@ body {
 
 .main-content {
   @apply w-full absolute top-0 flex items-center justify-center h-screen;
-/* 
-  top: 42%;
-  left: 28%; */
 }
 
 .city-input {
@@ -34,13 +31,21 @@ body {
 }
 
 .modal-content {
-  @apply bg-white p-2 w-96;
+  @apply bg-white p-2 w-96 rounded-2xl;
 }
 
 .close {
-  @apply text-gray-500 float-right font-bold text-3xl  hover:text-black cursor-pointer;
+  @apply text-gray-500 float-right font-bold text-3xl hover:text-black cursor-pointer pr-4;
 }
 
 .uList {
-  @apply p-20 text-2xl font-bold;
+  @apply p-20 text-3xl font-bold;
+}
+
+.uList li {
+  @apply text-center pb-3;
+}
+
+.uList li i {
+  @apply mx-5;
 }

@@ -18,22 +18,25 @@ function openModal(data) {
   uList.className += 'uList'
   items.appendChild(uList);
   let avgTemperature = document.createElement('li');
-  let avgTemperatureIcon = document.createElement('i')
+  avgTemperature.setAttribute('id', 'avgTemperature');
+  let avgTemperatureIcon = document.createElement('i');
   avgTemperature.appendChild(avgTemperatureIcon);
   avgTemperatureIcon.className += 'fas fa-thermometer-half';
-  avgTemperature.appendChild(document.createTextNode(`${data.avgtemp_c}`));
+  avgTemperature.appendChild(document.createTextNode(`${data.avgtemp_c}°C`));
   uList.appendChild(avgTemperature);
   let maxTemperature = document.createElement('li'); 
+  maxTemperature.setAttribute('id', 'maxTemperature');
   let maxTemperatureIcon = document.createElement('i');
   maxTemperature.appendChild(maxTemperatureIcon);
   maxTemperatureIcon.className += 'fas fa-thermometer-full';
-  maxTemperature.appendChild(document.createTextNode(`${data.maxtemp_c}`));
+  maxTemperature.appendChild(document.createTextNode(`${data.maxtemp_c}°C`));
   uList.appendChild(maxTemperature);
   let minTemperature = document.createElement('li');
+  minTemperature.setAttribute('id', 'minTemperature');
   let minTemperatureIcon = document.createElement('i');
   minTemperature.appendChild(minTemperatureIcon);
   minTemperatureIcon.className += 'fas fa-thermometer-empty';
-  minTemperature.appendChild(document.createTextNode(`${data.mintemp_c}`));
+  minTemperature.appendChild(document.createTextNode(`${data.mintemp_c}°C`));
   uList.appendChild(minTemperature);
   let precipitation = document.createElement('li');
   let precipitationIcon = document.createElement('i');
