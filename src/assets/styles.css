@@ -34,8 +34,9 @@ body {
   @apply bg-white p-2 w-96 rounded-2xl;
 }
 
+.label,
 .close {
-  @apply text-gray-500 float-right font-bold text-3xl hover:text-black cursor-pointer pr-4;
+  @apply text-gray-500 float-right font-bold text-3xl hover:text-black cursor-pointer pr-4 mx-1;
 }
 
 .uList {
@@ -48,4 +49,30 @@ body {
 
 .uList li i {
   @apply mx-5;
+}
+
+input::before {
+  @apply cursor-pointer;
+
+  content: '';
+  position: absolute;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transform: scale(1.1);
+  box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.2);
+  background-color: white;
+  transition: 0.2s ease-in-out;
+}
+
+input:checked {
+  @apply cursor-pointer bg-green-500;
+}
+
+input:checked::before {
+  @apply cursor-pointer;
+
+  left: 1.25rem;
 }
