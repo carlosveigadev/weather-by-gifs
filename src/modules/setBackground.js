@@ -12,6 +12,6 @@ const setBackground = (data) => {
     img.setAttribute('src', `${element.images.downsized.url}`);
     mainDiv.appendChild(img);
   });
-}
+};
 
 export default setBackground;

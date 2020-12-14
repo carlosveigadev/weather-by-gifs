@@ -9,6 +9,6 @@ const checkUvIndex = (index) => {
     return 'text-red-600';
   }
   return 'text-purple-600';
-}
+};
 
 export default checkUvIndex;

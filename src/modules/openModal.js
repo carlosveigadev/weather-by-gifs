@@ -87,6 +87,6 @@ const openModal = (data) => {
   toggleInput.addEventListener('click', () => {
     changeTemperature(data);
   });
-}
+};
 
 export default openModal;

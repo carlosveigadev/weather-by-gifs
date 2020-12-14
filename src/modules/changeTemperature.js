@@ -12,6 +12,6 @@ const changeTemperature = (data) => {
     maxTemperature.innerText = `${data.maxtemp_c}°C`;
     minTemperature.innerText = `${data.mintemp_c}°C`;
   }
-}
+};
 
 export default changeTemperature;

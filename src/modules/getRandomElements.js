@@ -7,6 +7,6 @@ const getRandomElements = (dataArray) => {
     i += 1;
   }
   return res;
-}
+};
 
 export default getRandomElements;
