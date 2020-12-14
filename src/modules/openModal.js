@@ -3,7 +3,7 @@ import checkUvIndex from './checkUvIndex';
 import getGifs from './getGifs';
 import setBackground from './setBackground';
 
-function openModal(data) {
+const openModal = (data) => {
   const myModal = document.createElement('div');
   myModal.setAttribute('id', 'myModal');
   myModal.className += 'modal';

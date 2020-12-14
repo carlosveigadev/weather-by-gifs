@@ -1,4 +1,4 @@
-function changeTemperature(data) {
+const changeTemperature = (data) => {
   const maxTemperature = document.getElementById('maxTemperature');
   const minTemperature = document.getElementById('minTemperature');
   const avgTemperature = document.getElementById('avgTemperature');

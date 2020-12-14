@@ -1,4 +1,4 @@
-function checkUvIndex(index) {
+const checkUvIndex = (index) => {
   if (index > 0 && index < 3) {
     return 'text-green-600';
   } if (index > 2 && index < 6) {

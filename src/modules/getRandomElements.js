@@ -1,4 +1,4 @@
-function getRandomElements(dataArray) {
+const getRandomElements = (dataArray) => {
   const res = [];
   const n = 18;
   for (let i = 0; i < n;) {

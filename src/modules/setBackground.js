@@ -1,6 +1,6 @@
 import getRandomElements from './getRandomElements';
 
-function setBackground(data) {
+const setBackground = (data) => {
   const mainDiv = document.getElementById('background');
   while (mainDiv.firstChild) {
     mainDiv.removeChild(mainDiv.firstChild);
