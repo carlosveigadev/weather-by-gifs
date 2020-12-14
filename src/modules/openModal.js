@@ -2,6 +2,7 @@ import changeTemperature from './changeTemperature';
 import checkUvIndex from './checkUvIndex';
 import getGifs from './getGifs';
 import setBackground from './setBackground';
+import loader from './loader';
 
 const openModal = (data) => {
   const myModal = document.createElement('div');
@@ -81,6 +82,7 @@ const openModal = (data) => {
     myModal.remove();
     const defaultGif = 'hmm';
     getGifs(defaultGif).then(object => setBackground(object.data));
+    loader();
   });
   toggleInput.addEventListener('click', () => {
     changeTemperature(data);
