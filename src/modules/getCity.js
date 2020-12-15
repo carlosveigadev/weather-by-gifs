@@ -1,3 +1,5 @@
+import openModalError from './openModalError';
+
 async function getCity(cityInput) {
   let response;
   let data;
@@ -10,7 +12,7 @@ async function getCity(cityInput) {
     data = city.forecast.forecastday[0].day;
     return data;
   } catch (error) {
-    window.open(error);
+    openModalError();
   }
   return data;
 }

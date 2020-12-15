@@ -1,3 +1,6 @@
+/* eslint import/no-cycle: [2, { ignoreExternal: true }] */
+import openModalError from './openModalError';
+
 async function getGifs(dataStatus) {
   let response;
   let gif;
@@ -9,7 +12,7 @@ async function getGifs(dataStatus) {
     gif = await response.json();
     return gif;
   } catch (error) {
-    window.open(error);
+    openModalError();
   }
   return gif.data;
 }
