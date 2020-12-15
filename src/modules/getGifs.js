@@ -1,4 +1,3 @@
-/* eslint import/no-cycle: [2, { ignoreExternal: true }] */
 import openModalError from './openModalError';
 
 async function getGifs(dataStatus) {
