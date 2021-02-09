@@ -39,9 +39,9 @@ Additional description of the project and its features.
 
 👤 **Carlos Veiga**
 
-- Github: [@githubhandle](https://github.com/carlosveig)
-- Twitter: [@twitterhandle](https://twitter.com/carlosveig)
-- Linkedin: [linkedin](https://linkedin.com/carlosveig)
+- [GitHub](https://github.com/carlosveigadev)
+- [Twitter](https://twitter.com/carlosveigadev)
+- [LinkedIn](https://linkedin.com/carlosveigadev)
 
 ## 🤝 Contributing
 
