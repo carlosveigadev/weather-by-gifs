@@ -4,7 +4,7 @@
 
 ![screenshot](src/assets/screenshot.png)
 
-Additional description about the project and its features.
+Additional description of the project and its features.
 
 ## Built With
 
@@ -16,14 +16,14 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://wrakc.github.io/weather-by-gifs/)
+[Live Demo Link](https://carlosveigadev.github.io/weather-by-gifs/)
 
 ## Setup
 
  - Open a terminal
  - Copy this code : 
  
-        git clone https://github.com/wrakc/weather-by-gifs.git
+        git clone https://github.com/carlosveigadev/weather-by-gifs
 
 - If you want to change anything, start your terminal and run the following commands to make sure everything is installed:
   
@@ -39,13 +39,13 @@ Additional description about the project and its features.
 
 👤 **Carlos Veiga**
 
-- Github: [@githubhandle](https://github.com/wrakc)
+- Github: [@githubhandle](https://github.com/carlosveig)
 - Twitter: [@twitterhandle](https://twitter.com/carlosveig)
-- Linkedin: [linkedin](https://linkedin.com/chveiga)
+- Linkedin: [linkedin](https://linkedin.com/carlosveig)
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](issues/).
 
@@ -55,7 +55,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Thanks the minskins,
+- Thanks to the minskins,
 - and Microverse for the opportunity.
 
 ## 📝 License
